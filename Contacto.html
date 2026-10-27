@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Maya | Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/funtion.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            <img class="logo" src="img/imge-1.1.webp" alt="Mundo Maya">
+            <h1>MUNDO MAYA</h1>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="Historia.html">Historia</a>
+        <a href="Dioses-y-mitología.html">Dioses y mitología</a>
+        <a href="Tradiciones.html">Tradiciones</a>
+        <a href="Arquitectura.html">Arquitectura</a>
+        <a class="activo" href="Contacto.html">Contacto</a>
+    </nav>
+
+    <div class="portada secundaria">
+        <img src="img/image-1.webp" alt="Patrimonio de la cultura maya">
+        <div class="texto-portada">
+            <h2>Contáctanos</h2>
+            <p>
+                Envíanos tus dudas, comentarios o preguntas sobre
+                la cultura maya.
+            </p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+
+        <h2 class="titulo-seccion">Formulario de contacto</h2>
+
+        <p class="introduccion">
+            Completa el siguiente formulario. Revisa que tus datos sean
+            correctos antes de enviarlo.
+        </p>
+
+        <div class="contacto-grid">
+
+            <div class="formulario-contenedor">
+
+                <form id="formContacto" novalidate>
+
+                    <div class="campo">
+                        <label for="nombre">Nombre completo:</label>
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Escribe tu nombre"
+                            maxlength="80"
+                            autocomplete="name"
+                            required>
+                        <small class="error" id="errorNombre"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="ejemplo@correo.com"
+                            maxlength="254"
+                            autocomplete="email"
+                            required>
+                        <small class="error" id="errorCorreo"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <option value="Historia">Historia maya</option>
+                            <option value="Dioses">Dioses y mitología</option>
+                            <option value="Tradiciones">Tradiciones</option>
+                            <option value="Arquitectura">Arquitectura</option>
+                            <option value="Otro">Otro tema</option>
+                        </select>
+                        <small class="error" id="errorAsunto"></small>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="5"
+                            maxlength="1000"
+                            placeholder="Escribe tu mensaje (mínimo 10 caracteres)"
+                            required></textarea>
+                        <small class="error" id="errorMensaje"></small>
+                    </div>
+
+                    <div class="campo campo-checkbox">
+                        <input
+                            type="checkbox"
+                            id="acepto"
+                            name="acepto"
+                            required>
+
+                        <label for="acepto">
+                            Confirmo que los datos proporcionados son correctos.
+                        </label>
+                    </div>
+
+                    <small class="error" id="errorAcepto"></small>
+
+                    <button type="submit" class="boton boton-enviar">
+                        Enviar mensaje
+                    </button>
+
+                    <p id="respuestaFormulario" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+            <div class="ubicacion">
+
+                <h2>Nuestra ubicación cultural</h2>
+
+                <p>
+                    <strong>Chichén Itzá</strong><br>
+                    Tinum, Yucatán, México.
+                </p>
+
+                <p>
+                    Chichén Itzá fue una importante ciudad maya.
+                    Actualmente es un sitio arqueológico que permite
+                    conocer parte de la historia y la arquitectura
+                    de esta civilización.
+                </p>
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Chichen%20Itza%2C%20Yucatan%2C%20Mexico&output=embed"
+                    title="Mapa de ubicación de Chichén Itzá"
+                    width="100%"
+                    height="320"
+                    style="border:0;"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+                <a
+                    class="boton"
+                    href="https://www.google.com/maps/search/?api=1&query=Chichen+Itza+Yucatan+Mexico"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Ver ubicación en Google Maps
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="pie">
+        <p>© 2026 Mundo Maya | Contacto</p>
+    </footer>
+
+</body>
+</html>
